@@ -10,6 +10,7 @@
 #import "PFIncidentCell.h"
 #import "PFNetworkCommunicator.h"
 #import "PFSingleIncidentViewController.h"
+#import "SVProgressHUD.h"
 
 @interface IncidentTableViewController ()
 
@@ -31,15 +32,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-    
+    [SVProgressHUD showWithStatus:@"Fetching Incidents" maskType:SVProgressHUDMaskTypeGradient];
     [[PFNetworkCommunicator sharedCommunicator] fetchOpenIncidentsWithCompletion:^(BOOL success, NSArray *objects, NSError *error) {
         if (success) {
             NSLog(@"Objects; %@", objects);
             self.incidents = [objects copy];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
+                [SVProgressHUD dismiss];
             });
         } else {
             NSLog(@"Error: %@", error);
