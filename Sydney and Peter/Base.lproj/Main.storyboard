@@ -105,7 +105,7 @@
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSg-xz-n9m">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSg-xz-n9m">
                                                     <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -155,17 +155,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incident" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWG-fg-YgL">
-                                <rect key="frame" x="139" y="273" width="62" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vGn-2p-I8D">
+                                <rect key="frame" x="20" y="81" width="280" height="170"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhG-hg-265">
+                                <rect key="frame" x="20" y="504" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57172580429999997" green="0.85980583850000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Mark as Resolved">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitNewIncident:" destination="SYn-D0-7kU" eventType="touchUpInside" id="rxh-vj-nbt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRC-GF-Zfa">
+                                <rect key="frame" x="20" y="259" width="280" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7et-oW-Q8B">
+                                <rect key="frame" x="20" y="330" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUx-j2-Jvj">
+                                <rect key="frame" x="20" y="293" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yyL-YK-xRe"/>
+                    <connections>
+                        <outlet property="incidentDescriptionTetField" destination="dUx-j2-Jvj" id="R6Z-SA-c4H"/>
+                        <outlet property="incidentImageView" destination="vGn-2p-I8D" id="AHf-sy-Xe9"/>
+                        <outlet property="incidentLocationLabel" destination="7et-oW-Q8B" id="XAl-am-YsW"/>
+                        <outlet property="incidentTitleLabel" destination="MRC-GF-Zfa" id="NPR-aU-qwk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9b-AL-SA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,9 +243,12 @@
                                 </state>
                                 <state key="selected" backgroundImage="severity_1_selected"/>
                                 <state key="highlighted" backgroundImage="severity_1_selected"/>
+                                <connections>
+                                    <action selector="setSeverityOneSelected:" destination="SYn-D0-7kU" eventType="touchUpInside" id="aI9-WQ-VXQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsO-BM-NG3">
-                                <rect key="frame" x="196" y="374" width="44" height="44"/>
+                                <rect key="frame" x="196" y="373" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="!!" backgroundImage="severity_2">
@@ -218,6 +256,9 @@
                                 </state>
                                 <state key="selected" backgroundImage="severity_2_selected"/>
                                 <state key="highlighted" backgroundImage="severity_2_selected"/>
+                                <connections>
+                                    <action selector="setSeverityTwoSelected:" destination="SYn-D0-7kU" eventType="touchUpInside" id="55v-wi-8IY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M72-Ac-Mki">
                                 <rect key="frame" x="248" y="374" width="44" height="44"/>
@@ -228,6 +269,9 @@
                                 </state>
                                 <state key="selected" backgroundImage="severity_3_selected"/>
                                 <state key="highlighted" backgroundImage="severity_3_selected"/>
+                                <connections>
+                                    <action selector="setSeverityThreeSelected:" destination="SYn-D0-7kU" eventType="touchUpInside" id="NI6-gx-7sD"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lja-Wu-2VC">
                                 <rect key="frame" x="20" y="269" width="280" height="30"/>
