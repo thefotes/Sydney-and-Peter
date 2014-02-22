@@ -16,6 +16,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *severityLevelTwo;
 @property (weak, nonatomic) IBOutlet UIButton *severityLevelThree;
 
+- (IBAction)setSeverityTwoSelected:(id)sender;
+- (IBAction)setSeverityThreeSelected:(id)sender;
+- (IBAction)setSeverityOneSelected:(id)sender;
+
+
 - (void)chooseImage:(id)sender;
 - (IBAction)submitNewIncident:(id)sender;
 
