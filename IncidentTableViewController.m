@@ -11,6 +11,7 @@
 #import "PFNetworkCommunicator.h"
 #import "PFSingleIncidentViewController.h"
 #import "SVProgressHUD.h"
+#import <Parse/Parse.h>
 
 @interface IncidentTableViewController ()
 
@@ -33,9 +34,14 @@
 {
     [super viewDidLoad];
     [SVProgressHUD showWithStatus:@"Fetching Incidents" maskType:SVProgressHUDMaskTypeGradient];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     [[PFNetworkCommunicator sharedCommunicator] fetchOpenIncidentsWithCompletion:^(BOOL success, NSArray *objects, NSError *error) {
         if (success) {
-            NSLog(@"Objects; %@", objects);
             self.incidents = [objects copy];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
@@ -46,7 +52,6 @@
         }
     }];
 }
-
 - (NSArray *)incidents
 {
     return _incidents = _incidents ?: [NSArray new];
@@ -94,6 +99,7 @@
 {
     PFSingleIncidentViewController *vc = segue.destinationViewController;
     vc.incident = [self.incidents objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+    vc.object = [self.incidents objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:NO];
 }
 @end

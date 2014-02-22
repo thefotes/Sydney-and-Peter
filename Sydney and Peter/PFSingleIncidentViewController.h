@@ -9,14 +9,17 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface PFSingleIncidentViewController : UIViewController
+@class PFObject;
+
+@interface PFSingleIncidentViewController : UIViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSDictionary *incident;
 @property (weak, nonatomic) IBOutlet UIImageView *incidentImageView;
 @property (weak, nonatomic) IBOutlet UILabel *incidentTitleLabel;
 @property (weak, nonatomic) IBOutlet UITextField *incidentDescriptionTetField;
 @property (weak, nonatomic) IBOutlet UILabel *incidentLocationLabel;
-
+@property (strong, nonatomic) PFObject *object;
 @property (weak, nonatomic) IBOutlet MKMapView *incidentMapView;
+- (IBAction)markAsResolved:(id)sender;
 
 @end

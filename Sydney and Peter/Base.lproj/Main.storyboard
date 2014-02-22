@@ -171,6 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="markAsResolved:" destination="mct-1t-bwh" eventType="touchUpInside" id="EtF-Mq-Ggc"/>
                                     <action selector="submitNewIncident:" destination="SYn-D0-7kU" eventType="touchUpInside" id="rxh-vj-nbt"/>
                                 </connections>
                             </button>

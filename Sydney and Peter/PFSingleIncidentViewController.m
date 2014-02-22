@@ -8,6 +8,7 @@
 
 #import "PFSingleIncidentViewController.h"
 #import <Parse/Parse.h>
+#import "SVProgressHUD.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -53,5 +54,33 @@
     self.incidentImageView.image = [UIImage imageWithData:[self.incident objectForKey:@"photo"]];
     self.incidentTitleLabel.text = [self.incident objectForKey:@"title"];
     self.incidentDescriptionTetField.text = [self.incident objectForKey:@"description"];
+}
+- (IBAction)markAsResolved:(id)sender
+{
+    [SVProgressHUD showWithStatus:@"Beautifying" maskType:SVProgressHUDMaskTypeGradient];
+    PFQuery *query = [PFQuery queryWithClassName:@"Incident"];
+
+    [query getObjectInBackgroundWithId:self.object.objectId
+                                 block:^(PFObject *object, NSError *error) {
+                                     [object setObject:@0 forKey:@"open"];
+                                     [object saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                                         if (succeeded) {
+                                             [SVProgressHUD dismiss];
+                                             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thank You!"
+                                                                                             message:@"We appreciate your help in beautifying Gainesville"
+                                                                                            delegate:self
+                                                                                   cancelButtonTitle:@"You're Welcome"
+                                                                                   otherButtonTitles:nil, nil];
+                                             [alert show];
+                                         }
+                                     }];
+                                 }];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"DId dismiss");
+//    [self performSegueWithIdentifier:@"unwind" sender:self];
 }
 @end
