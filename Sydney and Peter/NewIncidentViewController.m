@@ -33,9 +33,6 @@
     self.titleLabel.delegate = self;
     self.description.delegate = self;
     
-    UIImage *image = [UIImage imageNamed:@"sheldon.jpg"];
-    self.imageView.image = image;
-    
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(chooseImage:)];
     tapGesture.numberOfTapsRequired = 1;
 
