@@ -158,10 +158,7 @@
 		D00E8C5718B9183A00A29A70 /* Sydney and Peter */ = {
 			isa = PBXGroup;
 			children = (
-				D00E8C9018B9276300A29A70 /* UserModel.h */,
-				D00E8C9118B9276300A29A70 /* UserModel.m */,
-				D00E8C8B18B926BF00A29A70 /* IncidentModel.h */,
-				D00E8C8C18B926BF00A29A70 /* IncidentModel.m */,
+				D00E8CA518B92D1A00A29A70 /* Models */,
 				D00E8C6018B9183A00A29A70 /* PFAppDelegate.h */,
 				D00E8C6118B9183A00A29A70 /* PFAppDelegate.m */,
 				D00E8C6318B9183A00A29A70 /* Main.storyboard */,
@@ -200,6 +197,17 @@
 				D00E8C7918B9183A00A29A70 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D00E8CA518B92D1A00A29A70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D00E8C9018B9276300A29A70 /* UserModel.h */,
+				D00E8C9118B9276300A29A70 /* UserModel.m */,
+				D00E8C8B18B926BF00A29A70 /* IncidentModel.h */,
+				D00E8C8C18B926BF00A29A70 /* IncidentModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
