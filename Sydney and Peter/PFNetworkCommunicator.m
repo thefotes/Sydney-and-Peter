@@ -23,7 +23,7 @@
 
 - (void)fetchAllIncidentsWithCompletion:(RequestCompletionBlock)completionBlock
 {
-    PFQuery *query = [PFQuery queryWithClassName:@"Incidents"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Incident"];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
