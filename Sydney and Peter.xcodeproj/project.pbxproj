@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C989EE8818B935340090AE96 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
 		D00E8C5218B9183A00A29A70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C5118B9183A00A29A70 /* Foundation.framework */; };
 		D00E8C5418B9183A00A29A70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C5318B9183A00A29A70 /* CoreGraphics.framework */; };
 		D00E8C5618B9183A00A29A70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C5518B9183A00A29A70 /* UIKit.framework */; };
@@ -34,6 +33,9 @@
 		D00E8CA218B92A6900A29A70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA118B92A6900A29A70 /* StoreKit.framework */; };
 		D00E8CA418B92A6E00A29A70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */; };
 		D00E8CA718B9308100A29A70 /* graf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00E8CA618B9308100A29A70 /* graf.jpg */; };
+		D0BC77F418B938E100DA9576 /* IncidentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */; };
+		D0BC77F518B9397F00DA9576 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
+		D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F718B939B500DA9576 /* PFIncidentCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,10 @@
 		D00E8CA118B92A6900A29A70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D00E8CA618B9308100A29A70 /* graf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graf.jpg; sourceTree = "<group>"; };
+		D0BC77F218B938E100DA9576 /* IncidentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IncidentTableViewController.h; path = ../IncidentTableViewController.h; sourceTree = "<group>"; };
+		D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IncidentTableViewController.m; path = ../IncidentTableViewController.m; sourceTree = "<group>"; };
+		D0BC77F618B939B500DA9576 /* PFIncidentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFIncidentCell.h; sourceTree = "<group>"; };
+		D0BC77F718B939B500DA9576 /* PFIncidentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFIncidentCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,8 @@
 				D00E8C9618B92A3900A29A70 /* AudioToolbox.framework in Frameworks */,
 				D00E8C8F18B9272300A29A70 /* CoreLocation.framework in Frameworks */,
 				D00E8C5618B9183A00A29A70 /* UIKit.framework in Frameworks */,
+				D0BC77F518B9397F00DA9576 /* Parse.framework in Frameworks */,
 				D00E8C5218B9183A00A29A70 /* Foundation.framework in Frameworks */,
-				C989EE8818B935340090AE96 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,8 +171,12 @@
 				D00E8C6018B9183A00A29A70 /* PFAppDelegate.h */,
 				D00E8C6118B9183A00A29A70 /* PFAppDelegate.m */,
 				D00E8C6318B9183A00A29A70 /* Main.storyboard */,
+				D0BC77F618B939B500DA9576 /* PFIncidentCell.h */,
+				D0BC77F718B939B500DA9576 /* PFIncidentCell.m */,
 				D00E8C6618B9183A00A29A70 /* PFViewController.h */,
 				D00E8C6718B9183A00A29A70 /* PFViewController.m */,
+				D0BC77F218B938E100DA9576 /* IncidentTableViewController.h */,
+				D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */,
 				D00E8C6918B9183A00A29A70 /* Images.xcassets */,
 				D00E8C5818B9183A00A29A70 /* Supporting Files */,
 			);
@@ -317,6 +327,8 @@
 				D00E8C8D18B926BF00A29A70 /* IncidentModel.m in Sources */,
 				D00E8C6818B9183A00A29A70 /* PFViewController.m in Sources */,
 				D00E8C5E18B9183A00A29A70 /* main.m in Sources */,
+				D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */,
+				D0BC77F418B938E100DA9576 /* IncidentTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +458,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ssyyddnneeyy/Documents/SydneysGithub/Sydney-and-Peter",
+					"/Users/Peter/Dropbox/Documents/Open-Source/Sydney\\ and\\ Peter",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -464,6 +477,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ssyyddnneeyy/Documents/SydneysGithub/Sydney-and-Peter",
+					"/Users/Peter/Dropbox/Documents/Open-Source/Sydney\\ and\\ Peter",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sydney and Peter/Sydney and Peter-Prefix.pch";
