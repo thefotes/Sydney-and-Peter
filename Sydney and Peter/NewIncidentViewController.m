@@ -62,6 +62,33 @@
     [self.picker dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)setSeverityTwoSelected:(id)sender {
+    //reset the other buttons to unselected
+    [self.severityLevelOne setSelected:NO];
+    [self.severityLevelThree setSelected:NO];
+    
+    //set the new one to be selected
+    [sender setSelected:YES];
+}
+
+- (IBAction)setSeverityThreeSelected:(id)sender {
+    //reset the other buttons to unselected
+    [self.severityLevelOne setSelected:NO];
+    [self.severityLevelTwo setSelected:NO];
+    
+    //set the new one to be selected
+    [sender setSelected:YES];
+}
+
+- (IBAction)setSeverityOneSelected:(id)sender {
+    //reset the other buttons to unselected
+    [self.severityLevelTwo setSelected:NO];
+    [self.severityLevelThree setSelected:NO];
+    
+    //set the new one to be selected
+    [sender setSelected:YES];
+}
+
 - (void)chooseImage:(id)sender
 {
     self.picker = [[UIImagePickerController alloc] init];

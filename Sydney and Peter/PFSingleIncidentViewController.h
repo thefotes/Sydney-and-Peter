@@ -12,5 +12,9 @@
 @interface PFSingleIncidentViewController : UIViewController
 
 @property (strong, nonatomic) NSDictionary *incident;
+@property (weak, nonatomic) IBOutlet UIImageView *incidentImageView;
+@property (weak, nonatomic) IBOutlet UILabel *incidentTitleLabel;
+@property (weak, nonatomic) IBOutlet UITextField *incidentDescriptionTetField;
+@property (weak, nonatomic) IBOutlet UILabel *incidentLocationLabel;
 
 @end
