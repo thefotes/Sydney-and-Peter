@@ -211,13 +211,21 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitNewIncident:" destination="SYn-D0-7kU" eventType="touchUpInside" id="Vf1-7y-cbM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="piv-zV-9ZO"/>
                     <connections>
+                        <outlet property="description" destination="5rp-w2-u3r" id="QGP-HB-fvP"/>
                         <outlet property="imageView" destination="ELb-mE-NAN" id="JdJ-pP-0bJ"/>
+                        <outlet property="severityLevelOne" destination="cQa-y3-cf8" id="rfQ-7s-mla"/>
+                        <outlet property="severityLevelThree" destination="M72-Ac-Mki" id="o89-CS-nOo"/>
+                        <outlet property="severityLevelTwo" destination="fsO-BM-NG3" id="f2s-K1-liP"/>
+                        <outlet property="titleLabel" destination="lja-Wu-2VC" id="hcK-xO-KsK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qh-BQ-hqd" userLabel="First Responder" sceneMemberID="firstResponder"/>

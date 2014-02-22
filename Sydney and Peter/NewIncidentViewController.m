@@ -7,6 +7,7 @@
 //
 
 #import "NewIncidentViewController.h"
+#import <Parse/Parse.h>
 
 @interface NewIncidentViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -29,6 +30,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.titleLabel.delegate = self;
+    self.description.delegate = self;
+    
     UIImage *image = [UIImage imageNamed:@"sheldon.jpg"];
     self.imageView.image = image;
     
@@ -62,4 +66,48 @@
                      completion:nil];
 }
 
+- (IBAction)submitNewIncident:(id)sender
+{
+    NSData *imageData = UIImageJPEGRepresentation(self.imageView.image, 0.05f);
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"Incident"];
+    [testObject setObject:self.titleLabel.text forKey:@"title"];
+    [testObject setObject:self.description.text forKey:@"description"];
+    [testObject setObject:[NSDate date] forKey:@"date"];
+//    [testObject setObject:@(80.0) forKey:@"location"];
+    [testObject setObject:imageData forKey:@"photo"];
+    [testObject setObject:[self severityOfIncident] forKey:@"severity"];
+    [testObject setObject:@"User" forKey:@"user"];
+    [testObject setObject:@(1) forKey:@"open"];
+    
+    [testObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved"
+                                                            message:@"Thank you for reporting this incident"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"WOo"
+                                                  otherButtonTitles:nil, nil];
+            [alert show];
+        } else {
+            NSLog(@"Failure :( ");
+        }
+    }];
+}
+
+- (NSNumber *)severityOfIncident
+{
+    if ([self.severityLevelOne isSelected]) {
+        return @1;
+    } else if ([self.severityLevelTwo isSelected]){
+        return @2;
+    } else {
+        return @3;
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end
