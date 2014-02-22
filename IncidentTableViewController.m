@@ -69,6 +69,25 @@
     }
     
     cell.titleLabel.text = [[self.incidents objectAtIndex:indexPath.row] objectForKey:@"title"];
+    cell.descLabel.text = [[self.incidents objectAtIndex:indexPath.row] objectForKey:@"description"];
+    
+    UIImage *image = [UIImage imageWithData:[[self.incidents objectAtIndex:indexPath.row] objectForKey:@"photo"]];
+    cell.incidentImageView.image = image;
+    
+    NSNumber *sev = [[self.incidents objectAtIndex:indexPath.row] objectForKey:@"severity"];
+    
+    NSString *sevString;
+    if([sev compare:[NSNumber numberWithInt:1]]){
+        sevString = @"!";
+    }
+    else if([sev compare:[NSNumber numberWithInt:2]]){
+        sevString = @"!!";
+    }
+    else
+        sevString = @"!!!";
+    
+    cell.incidentSeverityValueLabel.text = sevString;
+    
     
     return cell;
 }

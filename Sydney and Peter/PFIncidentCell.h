@@ -11,5 +11,8 @@
 @interface PFIncidentCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *incidentImageView;
+@property (weak, nonatomic) IBOutlet UILabel *incidentSeverityValueLabel;
+
 
 @end
