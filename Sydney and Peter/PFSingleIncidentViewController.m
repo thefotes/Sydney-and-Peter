@@ -35,4 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.incidentImageView.image = [UIImage imageWithData:[self.incident objectForKey:@"photo"]];
+    self.incidentTitleLabel.text = [self.incident objectForKey:@"title"];
+    self.incidentDescriptionTetField.text = [self.incident objectForKey:@"description"];
+}
 @end
