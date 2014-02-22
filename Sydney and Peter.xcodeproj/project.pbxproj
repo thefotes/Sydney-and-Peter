@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C989EE8818B935340090AE96 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
 		D00E8C5218B9183A00A29A70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C5118B9183A00A29A70 /* Foundation.framework */; };
 		D00E8C5418B9183A00A29A70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C5318B9183A00A29A70 /* CoreGraphics.framework */; };
 		D00E8C5618B9183A00A29A70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C5518B9183A00A29A70 /* UIKit.framework */; };
@@ -24,7 +25,6 @@
 		D00E8C8D18B926BF00A29A70 /* IncidentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00E8C8C18B926BF00A29A70 /* IncidentModel.m */; };
 		D00E8C8F18B9272300A29A70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C8E18B9272300A29A70 /* CoreLocation.framework */; };
 		D00E8C9218B9276300A29A70 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00E8C9118B9276300A29A70 /* UserModel.m */; };
-		D00E8C9418B92A2100A29A70 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
 		D00E8C9618B92A3900A29A70 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9518B92A3900A29A70 /* AudioToolbox.framework */; };
 		D00E8C9818B92A3F00A29A70 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9718B92A3F00A29A70 /* CFNetwork.framework */; };
 		D00E8C9A18B92A4E00A29A70 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9918B92A4E00A29A70 /* libz.dylib */; };
@@ -98,7 +98,7 @@
 				D00E8C8F18B9272300A29A70 /* CoreLocation.framework in Frameworks */,
 				D00E8C5618B9183A00A29A70 /* UIKit.framework in Frameworks */,
 				D00E8C5218B9183A00A29A70 /* Foundation.framework in Frameworks */,
-				D00E8C9418B92A2100A29A70 /* Parse.framework in Frameworks */,
+				C989EE8818B935340090AE96 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,8 +433,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Peter/Dropbox/Documents/Open-Source/Sydney\\ and\\ Peter",
+					"/Users/ssyyddnneeyy/Documents/SydneysGithub/Sydney-and-Peter",
 				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sydney and Peter/Sydney and Peter-Prefix.pch";
 				INFOPLIST_FILE = "Sydney and Peter/Sydney and Peter-Info.plist";
@@ -450,7 +451,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Peter/Dropbox/Documents/Open-Source/Sydney\\ and\\ Peter",
+					"/Users/ssyyddnneeyy/Documents/SydneysGithub/Sydney-and-Peter",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sydney and Peter/Sydney and Peter-Prefix.pch";
