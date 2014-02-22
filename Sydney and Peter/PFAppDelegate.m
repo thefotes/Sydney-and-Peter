@@ -17,10 +17,33 @@
     [Parse setApplicationId:@"DwDJXiiF1IwHIGbD28ZhEWVSowyapOV6TaKR1Hzn"
                   clientKey:@"zWdGNZSHiKGKi05DAoCLbKUrEih9OvctGuVFIQwP"];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
+
+    UIImage *image = [UIImage imageNamed:@"graf.jpg"];
+    NSData *dataImage = UIImageJPEGRepresentation(image, 0.05f);
     
+    PFObject *testObject = [PFObject objectWithClassName:@"Incident"];
+    [testObject setObject:@"Grafiti en north wall" forKey:@"description"];
+    [testObject setObject:[NSDate date] forKey:@"date"];
+    [testObject setObject:@(80.0) forKey:@"location"];
+    [testObject setObject:dataImage forKey:@"photo"];
+    [testObject setObject:@(10) forKey:@"severity"];
+    [testObject setObject:@"User" forKey:@"user"];
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Incident"];
+//    [query includeKey:@"photo"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+        NSLog(@"Objects: %@", objects);
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
+        imageView.image = [UIImage imageWithData:[[objects objectAtIndex:1] objectForKey:@"photo"]];
+        [self.window addSubview:imageView];
+    }];
+     
+    [testObject saveInBackground];
     return YES;
 }
 							

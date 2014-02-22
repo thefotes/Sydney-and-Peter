@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@class UserModel;
+@class UserModel, PFGeoPoint;
 
 @interface IncidentModel : NSObject
 
 @property (copy, nonatomic) NSString *description;
 @property (strong, nonatomic) NSDate *date;
-@property (nonatomic) CLLocationCoordinate2D location;
+@property (strong, nonatomic)  PFGeoPoint *location;
 @property (strong, nonatomic) UIImage *photo;
 @property (nonatomic) NSInteger severity;
 @property (strong, nonatomic) UserModel *user;

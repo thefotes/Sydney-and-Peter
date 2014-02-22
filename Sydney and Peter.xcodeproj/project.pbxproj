@@ -33,6 +33,7 @@
 		D00E8CA018B92A6200A29A70 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9F18B92A6200A29A70 /* Security.framework */; };
 		D00E8CA218B92A6900A29A70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA118B92A6900A29A70 /* StoreKit.framework */; };
 		D00E8CA418B92A6E00A29A70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */; };
+		D00E8CA718B9308100A29A70 /* graf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00E8CA618B9308100A29A70 /* graf.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		D00E8C9F18B92A6200A29A70 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D00E8CA118B92A6900A29A70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D00E8CA618B9308100A29A70 /* graf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graf.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		D00E8C5718B9183A00A29A70 /* Sydney and Peter */ = {
 			isa = PBXGroup;
 			children = (
+				D00E8CA618B9308100A29A70 /* graf.jpg */,
 				D00E8CA518B92D1A00A29A70 /* Models */,
 				D00E8C6018B9183A00A29A70 /* PFAppDelegate.h */,
 				D00E8C6118B9183A00A29A70 /* PFAppDelegate.m */,
@@ -290,6 +293,7 @@
 				D00E8C6A18B9183A00A29A70 /* Images.xcassets in Resources */,
 				D00E8C5C18B9183A00A29A70 /* InfoPlist.strings in Resources */,
 				D00E8C6518B9183A00A29A70 /* Main.storyboard in Resources */,
+				D00E8CA718B9308100A29A70 /* graf.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
