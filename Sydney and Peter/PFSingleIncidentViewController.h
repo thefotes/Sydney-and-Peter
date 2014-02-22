@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MapKit/MapKit.h>
 
 @interface PFSingleIncidentViewController : UIViewController
 
@@ -16,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *incidentTitleLabel;
 @property (weak, nonatomic) IBOutlet UITextField *incidentDescriptionTetField;
 @property (weak, nonatomic) IBOutlet UILabel *incidentLocationLabel;
+
+@property (weak, nonatomic) IBOutlet MKMapView *incidentMapView;
 
 @end

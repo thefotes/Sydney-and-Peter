@@ -7,6 +7,9 @@
 //
 
 #import "PFSingleIncidentViewController.h"
+#import <Parse/Parse.h>
+
+#define METERS_PER_MILE 1609.344
 
 @interface PFSingleIncidentViewController ()
 
@@ -27,6 +30,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    PFGeoPoint *geoPoint = [self.incident objectForKey:@"location"];
+    CLLocationCoordinate2D location;
+    location.latitude = geoPoint.latitude;
+    location.longitude = geoPoint.longitude;
+    
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(location, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+    
+    // 3
+    [self.incidentMapView setRegion:viewRegion animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
