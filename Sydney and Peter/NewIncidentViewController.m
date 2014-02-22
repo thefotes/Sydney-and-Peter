@@ -37,7 +37,11 @@
     tapGesture.numberOfTapsRequired = 1;
 
     [self.imageView addGestureRecognizer:tapGesture];
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
         self.geoPoint = geoPoint;
         NSString *latLongString = [NSString stringWithFormat:@"%lf,%lf", geoPoint.latitude, geoPoint.longitude];
@@ -54,13 +58,11 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    NSLog(@"Cancelled");
     [self.picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)chooseImage:(id)sender
 {
-    NSLog(@"TAPPED");
     self.picker = [[UIImagePickerController alloc] init];
     self.picker.delegate = self;
     self.picker.allowsEditing = YES;
@@ -91,6 +93,12 @@
                                                   cancelButtonTitle:@"WOo"
                                                   otherButtonTitles:nil, nil];
             [alert show];
+            self.titleLabel.text = nil;
+            self.description.text = nil;
+            self.latLongLabel.text = nil;
+//            self.imageView.image = nil;
+            UIImage *image = [UIImage imageNamed:@"selectPhoto_placeholder"];
+            self.imageView.image = image;
         } else {
             NSLog(@"Failure :( ");
         }
