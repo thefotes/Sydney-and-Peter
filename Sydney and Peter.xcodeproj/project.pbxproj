@@ -21,6 +21,9 @@
 		D00E8C7318B9183A00A29A70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C5518B9183A00A29A70 /* UIKit.framework */; };
 		D00E8C7B18B9183A00A29A70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D00E8C7918B9183A00A29A70 /* InfoPlist.strings */; };
 		D00E8C7D18B9183A00A29A70 /* Sydney_and_PeterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D00E8C7C18B9183A00A29A70 /* Sydney_and_PeterTests.m */; };
+		D00E8C8D18B926BF00A29A70 /* IncidentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00E8C8C18B926BF00A29A70 /* IncidentModel.m */; };
+		D00E8C8F18B9272300A29A70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C8E18B9272300A29A70 /* CoreLocation.framework */; };
+		D00E8C9218B9276300A29A70 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00E8C9118B9276300A29A70 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		D00E8C7818B9183A00A29A70 /* Sydney and PeterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sydney and PeterTests-Info.plist"; sourceTree = "<group>"; };
 		D00E8C7A18B9183A00A29A70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D00E8C7C18B9183A00A29A70 /* Sydney_and_PeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sydney_and_PeterTests.m; sourceTree = "<group>"; };
+		D00E8C8B18B926BF00A29A70 /* IncidentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IncidentModel.h; path = ../IncidentModel.h; sourceTree = "<group>"; };
+		D00E8C8C18B926BF00A29A70 /* IncidentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IncidentModel.m; path = ../IncidentModel.m; sourceTree = "<group>"; };
+		D00E8C8E18B9272300A29A70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D00E8C9018B9276300A29A70 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		D00E8C9118B9276300A29A70 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00E8C8F18B9272300A29A70 /* CoreLocation.framework in Frameworks */,
 				D00E8C5418B9183A00A29A70 /* CoreGraphics.framework in Frameworks */,
 				D00E8C5618B9183A00A29A70 /* UIKit.framework in Frameworks */,
 				D00E8C5218B9183A00A29A70 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		D00E8C5018B9183A00A29A70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D00E8C8E18B9272300A29A70 /* CoreLocation.framework */,
 				D00E8C5118B9183A00A29A70 /* Foundation.framework */,
 				D00E8C5318B9183A00A29A70 /* CoreGraphics.framework */,
 				D00E8C5518B9183A00A29A70 /* UIKit.framework */,
@@ -112,6 +122,10 @@
 		D00E8C5718B9183A00A29A70 /* Sydney and Peter */ = {
 			isa = PBXGroup;
 			children = (
+				D00E8C9018B9276300A29A70 /* UserModel.h */,
+				D00E8C9118B9276300A29A70 /* UserModel.m */,
+				D00E8C8B18B926BF00A29A70 /* IncidentModel.h */,
+				D00E8C8C18B926BF00A29A70 /* IncidentModel.m */,
 				D00E8C6018B9183A00A29A70 /* PFAppDelegate.h */,
 				D00E8C6118B9183A00A29A70 /* PFAppDelegate.m */,
 				D00E8C6318B9183A00A29A70 /* Main.storyboard */,
@@ -251,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00E8C6218B9183A00A29A70 /* PFAppDelegate.m in Sources */,
+				D00E8C9218B9276300A29A70 /* UserModel.m in Sources */,
+				D00E8C8D18B926BF00A29A70 /* IncidentModel.m in Sources */,
 				D00E8C6818B9183A00A29A70 /* PFViewController.m in Sources */,
 				D00E8C5E18B9183A00A29A70 /* main.m in Sources */,
 			);
@@ -461,6 +477,7 @@
 				D00E8C8218B9183A00A29A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00E8C8318B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Sydney and PeterTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +486,7 @@
 				D00E8C8518B9183A00A29A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
