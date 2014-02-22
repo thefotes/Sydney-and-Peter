@@ -12,6 +12,8 @@
 
 @interface IncidentTableViewController ()
 
+@property (copy, nonatomic) NSArray *incidents;
+
 @end
 
 @implementation IncidentTableViewController
@@ -29,12 +31,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [[PFNetworkCommunicator sharedCommunicator] fetchAllIncidentsWithCompletion:^(BOOL success, NSArray *objects, NSError *error) {
+        if (success) {
+            NSLog(@"Objects; %@", objects);
+            self.incidents = [objects copy];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        } else {
+            NSLog(@"Error: %@", error);
+        }
+    }];
 }
 
-- (void)didReceiveMemoryWarning
+- (NSArray *)incidents
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return _incidents = _incidents ?: [NSArray new];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -44,14 +56,14 @@
         cell = [[PFIncidentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
-    cell.titleLabel.text = @"Test";
+    cell.titleLabel.text = [[self.incidents objectAtIndex:indexPath.row] objectForKey:@"title"];
     
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return self.incidents.count;
 }
 
 @end
