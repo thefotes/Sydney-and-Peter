@@ -37,6 +37,8 @@
 		D0BC77F518B9397F00DA9576 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
 		D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F718B939B500DA9576 /* PFIncidentCell.m */; };
 		D0BC77FB18B93ACD00DA9576 /* PFNetworkCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77FA18B93ACD00DA9576 /* PFNetworkCommunicator.m */; };
+		D0D58AA018B9453000FF22F9 /* NewIncidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D58A9F18B9453000FF22F9 /* NewIncidentViewController.m */; };
+		D0D58AA218B9463300FF22F9 /* sheldon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0D58AA118B9463300FF22F9 /* sheldon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,9 @@
 		D0BC77F718B939B500DA9576 /* PFIncidentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFIncidentCell.m; sourceTree = "<group>"; };
 		D0BC77F918B93ACD00DA9576 /* PFNetworkCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFNetworkCommunicator.h; sourceTree = "<group>"; };
 		D0BC77FA18B93ACD00DA9576 /* PFNetworkCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFNetworkCommunicator.m; sourceTree = "<group>"; };
+		D0D58A9E18B9453000FF22F9 /* NewIncidentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewIncidentViewController.h; sourceTree = "<group>"; };
+		D0D58A9F18B9453000FF22F9 /* NewIncidentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewIncidentViewController.m; sourceTree = "<group>"; };
+		D0D58AA118B9463300FF22F9 /* sheldon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sheldon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,11 +174,14 @@
 		D00E8C5718B9183A00A29A70 /* Sydney and Peter */ = {
 			isa = PBXGroup;
 			children = (
+				D0D58AA118B9463300FF22F9 /* sheldon.jpg */,
 				D00E8CA618B9308100A29A70 /* graf.jpg */,
 				D00E8CA518B92D1A00A29A70 /* Models */,
 				D00E8C6018B9183A00A29A70 /* PFAppDelegate.h */,
 				D00E8C6118B9183A00A29A70 /* PFAppDelegate.m */,
 				D00E8C6318B9183A00A29A70 /* Main.storyboard */,
+				D0D58A9E18B9453000FF22F9 /* NewIncidentViewController.h */,
+				D0D58A9F18B9453000FF22F9 /* NewIncidentViewController.m */,
 				D0BC77F918B93ACD00DA9576 /* PFNetworkCommunicator.h */,
 				D0BC77FA18B93ACD00DA9576 /* PFNetworkCommunicator.m */,
 				D0BC77F618B939B500DA9576 /* PFIncidentCell.h */,
@@ -306,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00E8C6A18B9183A00A29A70 /* Images.xcassets in Resources */,
+				D0D58AA218B9463300FF22F9 /* sheldon.jpg in Resources */,
 				D00E8C5C18B9183A00A29A70 /* InfoPlist.strings in Resources */,
 				D00E8C6518B9183A00A29A70 /* Main.storyboard in Resources */,
 				D00E8CA718B9308100A29A70 /* graf.jpg in Resources */,
@@ -333,6 +342,7 @@
 				D0BC77FB18B93ACD00DA9576 /* PFNetworkCommunicator.m in Sources */,
 				D00E8C6818B9183A00A29A70 /* PFViewController.m in Sources */,
 				D00E8C5E18B9183A00A29A70 /* main.m in Sources */,
+				D0D58AA018B9453000FF22F9 /* NewIncidentViewController.m in Sources */,
 				D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */,
 				D0BC77F418B938E100DA9576 /* IncidentTableViewController.m in Sources */,
 			);

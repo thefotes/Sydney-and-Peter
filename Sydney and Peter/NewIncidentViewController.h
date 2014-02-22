@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewIncidentViewController : UIViewController
+@interface NewIncidentViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+- (void)chooseImage:(id)sender;
 
 @end
