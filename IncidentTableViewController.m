@@ -8,6 +8,7 @@
 
 #import "IncidentTableViewController.h"
 #import "PFIncidentCell.h"
+#import "PFNetworkCommunicator.h"
 
 @interface IncidentTableViewController ()
 

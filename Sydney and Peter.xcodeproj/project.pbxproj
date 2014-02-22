@@ -36,6 +36,7 @@
 		D0BC77F418B938E100DA9576 /* IncidentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */; };
 		D0BC77F518B9397F00DA9576 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
 		D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F718B939B500DA9576 /* PFIncidentCell.m */; };
+		D0BC77FB18B93ACD00DA9576 /* PFNetworkCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77FA18B93ACD00DA9576 /* PFNetworkCommunicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IncidentTableViewController.m; path = ../IncidentTableViewController.m; sourceTree = "<group>"; };
 		D0BC77F618B939B500DA9576 /* PFIncidentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFIncidentCell.h; sourceTree = "<group>"; };
 		D0BC77F718B939B500DA9576 /* PFIncidentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFIncidentCell.m; sourceTree = "<group>"; };
+		D0BC77F918B93ACD00DA9576 /* PFNetworkCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFNetworkCommunicator.h; sourceTree = "<group>"; };
+		D0BC77FA18B93ACD00DA9576 /* PFNetworkCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFNetworkCommunicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 				D00E8C6018B9183A00A29A70 /* PFAppDelegate.h */,
 				D00E8C6118B9183A00A29A70 /* PFAppDelegate.m */,
 				D00E8C6318B9183A00A29A70 /* Main.storyboard */,
+				D0BC77F918B93ACD00DA9576 /* PFNetworkCommunicator.h */,
+				D0BC77FA18B93ACD00DA9576 /* PFNetworkCommunicator.m */,
 				D0BC77F618B939B500DA9576 /* PFIncidentCell.h */,
 				D0BC77F718B939B500DA9576 /* PFIncidentCell.m */,
 				D00E8C6618B9183A00A29A70 /* PFViewController.h */,
@@ -325,6 +330,7 @@
 				D00E8C6218B9183A00A29A70 /* PFAppDelegate.m in Sources */,
 				D00E8C9218B9276300A29A70 /* UserModel.m in Sources */,
 				D00E8C8D18B926BF00A29A70 /* IncidentModel.m in Sources */,
+				D0BC77FB18B93ACD00DA9576 /* PFNetworkCommunicator.m in Sources */,
 				D00E8C6818B9183A00A29A70 /* PFViewController.m in Sources */,
 				D00E8C5E18B9183A00A29A70 /* main.m in Sources */,
 				D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */,
