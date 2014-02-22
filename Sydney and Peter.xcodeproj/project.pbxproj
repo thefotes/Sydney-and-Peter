@@ -33,6 +33,7 @@
 		D00E8CA218B92A6900A29A70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA118B92A6900A29A70 /* StoreKit.framework */; };
 		D00E8CA418B92A6E00A29A70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */; };
 		D00E8CA718B9308100A29A70 /* graf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00E8CA618B9308100A29A70 /* graf.jpg */; };
+		D083C47E18B94FC600593B43 /* PFSingleIncidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D083C47D18B94FC600593B43 /* PFSingleIncidentViewController.m */; };
 		D0BC77F418B938E100DA9576 /* IncidentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */; };
 		D0BC77F518B9397F00DA9576 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
 		D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F718B939B500DA9576 /* PFIncidentCell.m */; };
@@ -86,6 +87,8 @@
 		D00E8CA118B92A6900A29A70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D00E8CA618B9308100A29A70 /* graf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graf.jpg; sourceTree = "<group>"; };
+		D083C47C18B94FC600593B43 /* PFSingleIncidentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSingleIncidentViewController.h; sourceTree = "<group>"; };
+		D083C47D18B94FC600593B43 /* PFSingleIncidentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSingleIncidentViewController.m; sourceTree = "<group>"; };
 		D0BC77F218B938E100DA9576 /* IncidentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IncidentTableViewController.h; path = ../IncidentTableViewController.h; sourceTree = "<group>"; };
 		D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IncidentTableViewController.m; path = ../IncidentTableViewController.m; sourceTree = "<group>"; };
 		D0BC77F618B939B500DA9576 /* PFIncidentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFIncidentCell.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				D00E8C6718B9183A00A29A70 /* PFViewController.m */,
 				D0BC77F218B938E100DA9576 /* IncidentTableViewController.h */,
 				D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */,
+				D083C47C18B94FC600593B43 /* PFSingleIncidentViewController.h */,
+				D083C47D18B94FC600593B43 /* PFSingleIncidentViewController.m */,
 				D00E8C6918B9183A00A29A70 /* Images.xcassets */,
 				D00E8C5818B9183A00A29A70 /* Supporting Files */,
 			);
@@ -338,6 +343,7 @@
 			files = (
 				D00E8C6218B9183A00A29A70 /* PFAppDelegate.m in Sources */,
 				D00E8C9218B9276300A29A70 /* UserModel.m in Sources */,
+				D083C47E18B94FC600593B43 /* PFSingleIncidentViewController.m in Sources */,
 				D00E8C8D18B926BF00A29A70 /* IncidentModel.m in Sources */,
 				D0BC77FB18B93ACD00DA9576 /* PFNetworkCommunicator.m in Sources */,
 				D00E8C6818B9183A00A29A70 /* PFViewController.m in Sources */,

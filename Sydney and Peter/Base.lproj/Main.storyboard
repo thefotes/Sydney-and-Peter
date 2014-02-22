@@ -85,11 +85,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" editingAccessoryType="checkmark" rowHeight="74" id="0Wd-5f-M5v" customClass="PFIncidentCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" editingAccessoryType="checkmark" rowHeight="74" id="0Wd-5f-M5v" customClass="PFIncidentCell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Wd-5f-M5v" id="303-pY-28g">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0M-xA-JJc">
@@ -122,6 +122,7 @@
                                             <outlet property="incidentImageView" destination="fSg-xz-n9m" id="gNS-Vc-U7h"/>
                                             <outlet property="incidentSeverityValueLabel" destination="zSu-5j-cJp" id="Gm8-sG-Zvh"/>
                                             <outlet property="titleLabel" destination="R0M-xA-JJc" id="jSS-RC-Qaf"/>
+                                            <segue destination="mct-1t-bwh" kind="push" id="Zui-eU-Qwb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -141,6 +142,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfL-bd-z7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="408"/>
+        </scene>
+        <!--Single Incident View Controller-->
+        <scene sceneID="zbF-c0-1G3">
+            <objects>
+                <viewController id="mct-1t-bwh" customClass="PFSingleIncidentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GOY-Gx-2lU"/>
+                        <viewControllerLayoutGuide type="bottom" id="z47-xl-3HG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HlT-s3-AnE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incident" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWG-fg-YgL">
+                                <rect key="frame" x="139" y="273" width="62" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yyL-YK-xRe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9b-AL-SA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="408"/>
         </scene>
         <!--New Incident View Controller-->
         <scene sceneID="e6Y-jP-wHM">

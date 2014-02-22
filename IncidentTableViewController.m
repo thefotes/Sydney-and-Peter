@@ -9,6 +9,7 @@
 #import "IncidentTableViewController.h"
 #import "PFIncidentCell.h"
 #import "PFNetworkCommunicator.h"
+#import "PFSingleIncidentViewController.h"
 
 @interface IncidentTableViewController ()
 
@@ -97,4 +98,10 @@
     return self.incidents.count;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PFSingleIncidentViewController *vc = segue.destinationViewController;
+    vc.incident = [self.incidents objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:NO];
+}
 @end
