@@ -18,18 +18,18 @@
                   clientKey:@"zWdGNZSHiKGKi05DAoCLbKUrEih9OvctGuVFIQwP"];
     
 
-    UIImage *image = [UIImage imageNamed:@"graf.jpg"];
-    NSData *dataImage = UIImageJPEGRepresentation(image, 0.05f);
-    
-    PFObject *testObject = [PFObject objectWithClassName:@"Incident"];
-    [testObject setObject:@"Grafiti" forKey:@"title"];
-    [testObject setObject:@"Grafiti en north wall" forKey:@"description"];
-    [testObject setObject:[NSDate date] forKey:@"date"];
-    [testObject setObject:@(80.0) forKey:@"location"];
-    [testObject setObject:dataImage forKey:@"photo"];
-    [testObject setObject:@(10) forKey:@"severity"];
-    [testObject setObject:@"User" forKey:@"user"];
-    [testObject setObject:@(0) forKey:@"open"];
+//    UIImage *image = [UIImage imageNamed:@"graf.jpg"];
+//    NSData *dataImage = UIImageJPEGRepresentation(image, 0.05f);
+//    
+//    PFObject *testObject = [PFObject objectWithClassName:@"Incident"];
+//    [testObject setObject:@"Grafiti" forKey:@"title"];
+//    [testObject setObject:@"Grafiti en north wall" forKey:@"description"];
+//    [testObject setObject:[NSDate date] forKey:@"date"];
+//    [testObject setObject:@(80.0) forKey:@"location"];
+//    [testObject setObject:dataImage forKey:@"photo"];
+//    [testObject setObject:@(10) forKey:@"severity"];
+//    [testObject setObject:@"User" forKey:@"user"];
+//    [testObject setObject:@(0) forKey:@"open"];
 
     
 //    
@@ -46,7 +46,7 @@
 //        [self.window addSubview:imageView];
 //    }];
     
-    [testObject saveInBackground];
+//    [testObject saveInBackground];
     return YES;
 }
 							

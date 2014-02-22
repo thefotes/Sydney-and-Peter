@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *severityLevelOne;
 @property (weak, nonatomic) IBOutlet UIButton *severityLevelTwo;
 @property (weak, nonatomic) IBOutlet UIButton *severityLevelThree;
+@property (weak, nonatomic) IBOutlet UILabel *latLongLabel;
 
 - (void)chooseImage:(id)sender;
 - (IBAction)submitNewIncident:(id)sender;

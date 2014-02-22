@@ -194,13 +194,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Severity:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcl-4T-qm1">
-                                <rect key="frame" x="20" y="385" width="67" height="21"/>
+                                <rect key="frame" x="20" y="441" width="67" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-y3-cf8">
-                                <rect key="frame" x="144" y="374" width="44" height="44"/>
+                                <rect key="frame" x="144" y="430" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="!" backgroundImage="severity_1">
@@ -210,7 +210,7 @@
                                 <state key="highlighted" backgroundImage="severity_1_selected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsO-BM-NG3">
-                                <rect key="frame" x="196" y="374" width="44" height="44"/>
+                                <rect key="frame" x="196" y="430" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="!!" backgroundImage="severity_2">
@@ -220,7 +220,7 @@
                                 <state key="highlighted" backgroundImage="severity_2_selected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M72-Ac-Mki">
-                                <rect key="frame" x="248" y="374" width="44" height="44"/>
+                                <rect key="frame" x="248" y="430" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="!!!" backgroundImage="severity_3">
@@ -248,6 +248,13 @@
                                     <action selector="submitNewIncident:" destination="SYn-D0-7kU" eventType="touchUpInside" id="Vf1-7y-cbM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lat/Long" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV6-bf-aBb">
+                                <rect key="frame" x="20" y="370" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -255,6 +262,7 @@
                     <connections>
                         <outlet property="description" destination="5rp-w2-u3r" id="QGP-HB-fvP"/>
                         <outlet property="imageView" destination="ELb-mE-NAN" id="JdJ-pP-0bJ"/>
+                        <outlet property="latLongLabel" destination="HV6-bf-aBb" id="eFT-Xb-8Yy"/>
                         <outlet property="severityLevelOne" destination="cQa-y3-cf8" id="rfQ-7s-mla"/>
                         <outlet property="severityLevelThree" destination="M72-Ac-Mki" id="o89-CS-nOo"/>
                         <outlet property="severityLevelTwo" destination="fsO-BM-NG3" id="f2s-K1-liP"/>

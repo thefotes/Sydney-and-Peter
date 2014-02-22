@@ -12,7 +12,7 @@
 @interface NewIncidentViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) UIImagePickerController *picker;
-
+@property (strong, nonatomic) PFGeoPoint *geoPoint;
 @end
 
 @implementation NewIncidentViewController
@@ -37,6 +37,12 @@
     tapGesture.numberOfTapsRequired = 1;
 
     [self.imageView addGestureRecognizer:tapGesture];
+    
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+        self.geoPoint = geoPoint;
+        NSString *latLongString = [NSString stringWithFormat:@"%lf,%lf", geoPoint.latitude, geoPoint.longitude];
+        self.latLongLabel.text = latLongString;
+    }];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -71,7 +77,7 @@
     [testObject setObject:self.titleLabel.text forKey:@"title"];
     [testObject setObject:self.description.text forKey:@"description"];
     [testObject setObject:[NSDate date] forKey:@"date"];
-//    [testObject setObject:@(80.0) forKey:@"location"];
+    [testObject setObject:self.geoPoint forKey:@"location"];
     [testObject setObject:imageData forKey:@"photo"];
     [testObject setObject:[self severityOfIncident] forKey:@"severity"];
     [testObject setObject:@"User" forKey:@"user"];
