@@ -22,7 +22,7 @@
         <!--View Controller-->
         <scene sceneID="H5d-3R-k3o">
             <objects>
-                <viewController id="Sfq-C3-uZJ" sceneMemberID="viewController">
+                <viewController id="Sfq-C3-uZJ" customClass="PFViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ReY-P8-z3l"/>
                         <viewControllerLayoutGuide type="bottom" id="dqS-ak-nUl"/>
