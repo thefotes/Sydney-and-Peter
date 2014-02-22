@@ -15,4 +15,6 @@ typedef void (^RequestCompletionBlock) (BOOL success, NSArray *objects, NSError 
 + (instancetype)sharedCommunicator;
 
 - (void)fetchAllIncidentsWithCompletion:(RequestCompletionBlock)completionBlock;
+
+- (void)fetchOpenIncidentsWithCompletion:(RequestCompletionBlock)completionBlock;
 @end

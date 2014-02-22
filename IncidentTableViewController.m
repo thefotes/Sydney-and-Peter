@@ -31,7 +31,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [[PFNetworkCommunicator sharedCommunicator] fetchAllIncidentsWithCompletion:^(BOOL success, NSArray *objects, NSError *error) {
+//    [[PFNetworkCommunicator sharedCommunicator] fetchAllIncidentsWithCompletion:^(BOOL success, NSArray *objects, NSError *error) {
+//        if (success) {
+//            NSLog(@"Objects; %@", objects);
+//            self.incidents = [objects copy];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self.tableView reloadData];
+//            });
+//        } else {
+//            NSLog(@"Error: %@", error);
+//        }
+//    }];
+    
+    [[PFNetworkCommunicator sharedCommunicator] fetchOpenIncidentsWithCompletion:^(BOOL success, NSArray *objects, NSError *error) {
         if (success) {
             NSLog(@"Objects; %@", objects);
             self.incidents = [objects copy];

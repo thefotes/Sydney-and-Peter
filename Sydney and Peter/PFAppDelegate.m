@@ -29,6 +29,8 @@
     [testObject setObject:dataImage forKey:@"photo"];
     [testObject setObject:@(10) forKey:@"severity"];
     [testObject setObject:@"User" forKey:@"user"];
+    [testObject setObject:@(0) forKey:@"open"];
+
     
 //    
 //    PFQuery *query = [PFQuery queryWithClassName:@"Incident"];

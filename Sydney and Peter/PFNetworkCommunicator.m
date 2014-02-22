@@ -38,4 +38,23 @@
     }];
 }
 
+- (void)fetchOpenIncidentsWithCompletion:(RequestCompletionBlock)completionBlock
+{
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"open = 1"];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Incident"];
+    
+    [query whereKey:@"open" notEqualTo:@0];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            if (completionBlock) {
+                completionBlock(YES, objects, nil);
+            }
+        } else {
+            if (completionBlock) {
+                completionBlock(NO, nil, error);
+            }
+        }
+    }];
+}
 @end
