@@ -8,6 +8,7 @@
 
 #import "NewIncidentViewController.h"
 #import <Parse/Parse.h>
+#import "SVProgressHUD.h"
 
 @interface NewIncidentViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -73,6 +74,7 @@
 
 - (IBAction)submitNewIncident:(id)sender
 {
+    [SVProgressHUD showWithStatus:@"Saving Incident" maskType:SVProgressHUDMaskTypeGradient];
     NSData *imageData = UIImageJPEGRepresentation(self.imageView.image, 0.05f);
     
     PFObject *testObject = [PFObject objectWithClassName:@"Incident"];
@@ -96,9 +98,9 @@
             self.titleLabel.text = nil;
             self.description.text = nil;
             self.latLongLabel.text = nil;
-//            self.imageView.image = nil;
             UIImage *image = [UIImage imageNamed:@"selectPhoto_placeholder"];
             self.imageView.image = image;
+            [SVProgressHUD dismiss];
         } else {
             NSLog(@"Failure :( ");
         }

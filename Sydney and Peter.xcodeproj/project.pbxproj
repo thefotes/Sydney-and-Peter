@@ -33,6 +33,8 @@
 		D00E8CA218B92A6900A29A70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA118B92A6900A29A70 /* StoreKit.framework */; };
 		D00E8CA418B92A6E00A29A70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */; };
 		D00E8CA718B9308100A29A70 /* graf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00E8CA618B9308100A29A70 /* graf.jpg */; };
+		D031BE2218B95BA10047B706 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D031BE1F18B95BA10047B706 /* SVProgressHUD.bundle */; };
+		D031BE2318B95BA10047B706 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D031BE2118B95BA10047B706 /* SVProgressHUD.m */; };
 		D083C47E18B94FC600593B43 /* PFSingleIncidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D083C47D18B94FC600593B43 /* PFSingleIncidentViewController.m */; };
 		D0BC77F418B938E100DA9576 /* IncidentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC77F318B938E100DA9576 /* IncidentTableViewController.m */; };
 		D0BC77F518B9397F00DA9576 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E8C9318B92A2100A29A70 /* Parse.framework */; };
@@ -87,6 +89,10 @@
 		D00E8CA118B92A6900A29A70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D00E8CA318B92A6E00A29A70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D00E8CA618B9308100A29A70 /* graf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graf.jpg; sourceTree = "<group>"; };
+		D031BE1E18B95BA10047B706 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		D031BE1F18B95BA10047B706 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		D031BE2018B95BA10047B706 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		D031BE2118B95BA10047B706 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		D083C47C18B94FC600593B43 /* PFSingleIncidentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSingleIncidentViewController.h; sourceTree = "<group>"; };
 		D083C47D18B94FC600593B43 /* PFSingleIncidentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSingleIncidentViewController.m; sourceTree = "<group>"; };
 		D0BC77F218B938E100DA9576 /* IncidentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IncidentTableViewController.h; path = ../IncidentTableViewController.h; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 		D00E8C4518B9183900A29A70 = {
 			isa = PBXGroup;
 			children = (
+				D031BE1D18B95BA10047B706 /* SVProgressHUD */,
 				D00E8C5718B9183A00A29A70 /* Sydney and Peter */,
 				D00E8C7618B9183A00A29A70 /* Sydney and PeterTests */,
 				D00E8C5018B9183A00A29A70 /* Frameworks */,
@@ -241,6 +248,17 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		D031BE1D18B95BA10047B706 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D031BE1E18B95BA10047B706 /* SVProgressHUD-Prefix.pch */,
+				D031BE1F18B95BA10047B706 /* SVProgressHUD.bundle */,
+				D031BE2018B95BA10047B706 /* SVProgressHUD.h */,
+				D031BE2118B95BA10047B706 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00E8C6A18B9183A00A29A70 /* Images.xcassets in Resources */,
+				D031BE2218B95BA10047B706 /* SVProgressHUD.bundle in Resources */,
 				D0D58AA218B9463300FF22F9 /* sheldon.jpg in Resources */,
 				D00E8C5C18B9183A00A29A70 /* InfoPlist.strings in Resources */,
 				D00E8C6518B9183A00A29A70 /* Main.storyboard in Resources */,
@@ -350,6 +369,7 @@
 				D00E8C5E18B9183A00A29A70 /* main.m in Sources */,
 				D0D58AA018B9453000FF22F9 /* NewIncidentViewController.m in Sources */,
 				D0BC77F818B939B500DA9576 /* PFIncidentCell.m in Sources */,
+				D031BE2318B95BA10047B706 /* SVProgressHUD.m in Sources */,
 				D0BC77F418B938E100DA9576 /* IncidentTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
