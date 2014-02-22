@@ -66,18 +66,20 @@
     cell.incidentImageView.image = image;
     
     NSNumber *sev = [[self.incidents objectAtIndex:indexPath.row] objectForKey:@"severity"];
-    
-    NSString *sevString;
+
     if([sev compare:[NSNumber numberWithInt:1]]){
-        sevString = @"!";
+        cell.incidentSeverityValueLabel.text = @"!";
+        cell.incidentSeverityValueLabel.backgroundColor = [UIColor colorWithRed:0.22f green:0.537f blue:0.058f alpha:1];
     }
     else if([sev compare:[NSNumber numberWithInt:2]]){
-        sevString = @"!!";
+        cell.incidentSeverityValueLabel.text = @"!!";
+        cell.incidentSeverityValueLabel.backgroundColor = [UIColor colorWithRed:1.0f green:0.56f blue:0.11f alpha:1];
     }
-    else
-        sevString = @"!!!";
-    
-    cell.incidentSeverityValueLabel.text = sevString;
+    else{
+        cell.incidentSeverityValueLabel.text = @"!!!";
+        cell.incidentSeverityValueLabel.backgroundColor = [UIColor colorWithRed:1.0f green:0.117f blue:0.16f alpha:1];
+    }
+    [cell.incidentSeverityValueLabel.layer setCornerRadius:22];
     
     
     return cell;
