@@ -67,7 +67,6 @@
         <!--View Controller-->
         <scene sceneID="5DD-OX-vTa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kfL-bd-z7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="cUZ-xf-6gr" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cPT-aT-pf3"/>
@@ -87,6 +86,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="oG1-hQ-Gxm"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfL-bd-z7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="408"/>
         </scene>
@@ -113,34 +113,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Severity:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcl-4T-qm1">
-                                <rect key="frame" x="20" y="468" width="67" height="21"/>
+                                <rect key="frame" x="20" y="385" width="67" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-y3-cf8">
-                                <rect key="frame" x="144" y="457" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-y3-cf8">
+                                <rect key="frame" x="144" y="374" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="!">
+                                <state key="normal" title="!" backgroundImage="severity_1">
                                     <color key="titleColor" red="0.22515685856342316" green="0.53678756952285767" blue="0.060632344335317612" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="selected" backgroundImage="severity_1_selected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsO-BM-NG3">
-                                <rect key="frame" x="196" y="457" width="44" height="44"/>
+                                <rect key="frame" x="196" y="374" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="!!">
+                                <state key="normal" title="!!" backgroundImage="severity_2">
                                     <color key="titleColor" red="1" green="0.56410940129999998" blue="0.1135141939" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="selected" backgroundImage="severity_2_selected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M72-Ac-Mki">
-                                <rect key="frame" x="248" y="457" width="44" height="44"/>
+                                <rect key="frame" x="248" y="374" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="!!!">
+                                <state key="normal" title="!!!" backgroundImage="severity_3">
                                     <color key="titleColor" red="1" green="0.1163438443" blue="0.1617267204" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="selected" backgroundImage="severity_3_selected"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lja-Wu-2VC">
                                 <rect key="frame" x="20" y="269" width="280" height="30"/>
@@ -148,6 +151,16 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0n-ZM-fSc">
+                                <rect key="frame" x="20" y="474" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98900091649999999" green="0.41001701350000003" blue="0.43766921759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -158,6 +171,14 @@
             <point key="canvasLocation" x="1117" y="-316"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="severity_1" width="44" height="44"/>
+        <image name="severity_1_selected" width="44" height="44"/>
+        <image name="severity_2" width="44" height="44"/>
+        <image name="severity_2_selected" width="44" height="44"/>
+        <image name="severity_3" width="44" height="44"/>
+        <image name="severity_3_selected" width="44" height="44"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
