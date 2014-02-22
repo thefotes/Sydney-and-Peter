@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="1117" y="408"/>
         </scene>
-        <!--View Controller-->
+        <!--New Incident View Controller-->
         <scene sceneID="e6Y-jP-wHM">
             <objects>
-                <viewController id="SYn-D0-7kU" sceneMemberID="viewController">
+                <viewController id="SYn-D0-7kU" customClass="NewIncidentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i7c-4M-mOb"/>
                         <viewControllerLayoutGuide type="bottom" id="Pyi-YW-5Eg"/>
