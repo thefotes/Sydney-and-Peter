@@ -55,23 +55,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D00E8C4E18B9183A00A29A70 /* Sydney and Peter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sydney and Peter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00E8C4E18B9183A00A29A70 /* Beautify GNV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beautify GNV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00E8C5118B9183A00A29A70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D00E8C5318B9183A00A29A70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D00E8C5518B9183A00A29A70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D00E8C5918B9183A00A29A70 /* Sydney and Peter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sydney and Peter-Info.plist"; sourceTree = "<group>"; };
+		D00E8C5918B9183A00A29A70 /* Beautify GNV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Beautify GNV-Info.plist"; sourceTree = "<group>"; };
 		D00E8C5B18B9183A00A29A70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D00E8C5D18B9183A00A29A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D00E8C5F18B9183A00A29A70 /* Sydney and Peter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sydney and Peter-Prefix.pch"; sourceTree = "<group>"; };
+		D00E8C5F18B9183A00A29A70 /* Beautify GNV-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beautify GNV-Prefix.pch"; sourceTree = "<group>"; };
 		D00E8C6018B9183A00A29A70 /* PFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFAppDelegate.h; sourceTree = "<group>"; };
 		D00E8C6118B9183A00A29A70 /* PFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFAppDelegate.m; sourceTree = "<group>"; };
 		D00E8C6418B9183A00A29A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D00E8C6618B9183A00A29A70 /* PFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFViewController.h; sourceTree = "<group>"; };
 		D00E8C6718B9183A00A29A70 /* PFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFViewController.m; sourceTree = "<group>"; };
 		D00E8C6918B9183A00A29A70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D00E8C6F18B9183A00A29A70 /* Sydney and PeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sydney and PeterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00E8C6F18B9183A00A29A70 /* Beautify GNVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beautify GNVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00E8C7018B9183A00A29A70 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D00E8C7818B9183A00A29A70 /* Sydney and PeterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sydney and PeterTests-Info.plist"; sourceTree = "<group>"; };
+		D00E8C7818B9183A00A29A70 /* Beautify GNVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Beautify GNVTests-Info.plist"; sourceTree = "<group>"; };
 		D00E8C7A18B9183A00A29A70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D00E8C7C18B9183A00A29A70 /* Sydney_and_PeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sydney_and_PeterTests.m; sourceTree = "<group>"; };
 		D00E8C8B18B926BF00A29A70 /* IncidentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IncidentModel.h; path = ../IncidentModel.h; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 		D00E8C4F18B9183A00A29A70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D00E8C4E18B9183A00A29A70 /* Sydney and Peter.app */,
-				D00E8C6F18B9183A00A29A70 /* Sydney and PeterTests.xctest */,
+				D00E8C4E18B9183A00A29A70 /* Beautify GNV.app */,
+				D00E8C6F18B9183A00A29A70 /* Beautify GNVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,10 +211,10 @@
 		D00E8C5818B9183A00A29A70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D00E8C5918B9183A00A29A70 /* Sydney and Peter-Info.plist */,
+				D00E8C5918B9183A00A29A70 /* Beautify GNV-Info.plist */,
 				D00E8C5A18B9183A00A29A70 /* InfoPlist.strings */,
 				D00E8C5D18B9183A00A29A70 /* main.m */,
-				D00E8C5F18B9183A00A29A70 /* Sydney and Peter-Prefix.pch */,
+				D00E8C5F18B9183A00A29A70 /* Beautify GNV-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 		D00E8C7718B9183A00A29A70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D00E8C7818B9183A00A29A70 /* Sydney and PeterTests-Info.plist */,
+				D00E8C7818B9183A00A29A70 /* Beautify GNVTests-Info.plist */,
 				D00E8C7918B9183A00A29A70 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -262,9 +262,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D00E8C4D18B9183A00A29A70 /* Sydney and Peter */ = {
+		D00E8C4D18B9183A00A29A70 /* Beautify GNV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D00E8C8018B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Sydney and Peter" */;
+			buildConfigurationList = D00E8C8018B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Beautify GNV" */;
 			buildPhases = (
 				D00E8C4A18B9183A00A29A70 /* Sources */,
 				D00E8C4B18B9183A00A29A70 /* Frameworks */,
@@ -274,14 +274,14 @@
 			);
 			dependencies = (
 			);
-			name = "Sydney and Peter";
+			name = "Beautify GNV";
 			productName = "Sydney and Peter";
-			productReference = D00E8C4E18B9183A00A29A70 /* Sydney and Peter.app */;
+			productReference = D00E8C4E18B9183A00A29A70 /* Beautify GNV.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D00E8C6E18B9183A00A29A70 /* Sydney and PeterTests */ = {
+		D00E8C6E18B9183A00A29A70 /* Beautify GNVTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D00E8C8318B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Sydney and PeterTests" */;
+			buildConfigurationList = D00E8C8318B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Beautify GNVTests" */;
 			buildPhases = (
 				D00E8C6B18B9183A00A29A70 /* Sources */,
 				D00E8C6C18B9183A00A29A70 /* Frameworks */,
@@ -292,9 +292,9 @@
 			dependencies = (
 				D00E8C7518B9183A00A29A70 /* PBXTargetDependency */,
 			);
-			name = "Sydney and PeterTests";
+			name = "Beautify GNVTests";
 			productName = "Sydney and PeterTests";
-			productReference = D00E8C6F18B9183A00A29A70 /* Sydney and PeterTests.xctest */;
+			productReference = D00E8C6F18B9183A00A29A70 /* Beautify GNVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -315,7 +315,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D00E8C4918B9183900A29A70 /* Build configuration list for PBXProject "Sydney and Peter" */;
+			buildConfigurationList = D00E8C4918B9183900A29A70 /* Build configuration list for PBXProject "Beautify GNV" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -328,8 +328,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D00E8C4D18B9183A00A29A70 /* Sydney and Peter */,
-				D00E8C6E18B9183A00A29A70 /* Sydney and PeterTests */,
+				D00E8C4D18B9183A00A29A70 /* Beautify GNV */,
+				D00E8C6E18B9183A00A29A70 /* Beautify GNVTests */,
 			);
 		};
 /* End PBXProject section */
@@ -390,7 +390,7 @@
 /* Begin PBXTargetDependency section */
 		D00E8C7518B9183A00A29A70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D00E8C4D18B9183A00A29A70 /* Sydney and Peter */;
+			target = D00E8C4D18B9183A00A29A70 /* Beautify GNV */;
 			targetProxy = D00E8C7418B9183A00A29A70 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -509,9 +509,9 @@
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sydney and Peter/Sydney and Peter-Prefix.pch";
-				INFOPLIST_FILE = "Sydney and Peter/Sydney and Peter-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Sydney and Peter/Beautify GNV-Prefix.pch";
+				INFOPLIST_FILE = "Sydney and Peter/Beautify GNV-Info.plist";
+				PRODUCT_NAME = "Beautify GNV";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -530,9 +530,9 @@
 					"/Users/Peter/Dropbox/Documents/Open-Source/Sydney\\ and\\ Peter",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sydney and Peter/Sydney and Peter-Prefix.pch";
-				INFOPLIST_FILE = "Sydney and Peter/Sydney and Peter-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Sydney and Peter/Beautify GNV-Prefix.pch";
+				INFOPLIST_FILE = "Sydney and Peter/Beautify GNV-Info.plist";
+				PRODUCT_NAME = "Beautify GNV";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -554,8 +554,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Sydney and PeterTests/Sydney and PeterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Sydney and PeterTests/Beautify GNVTests-Info.plist";
+				PRODUCT_NAME = "Beautify GNVTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -573,8 +573,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sydney and Peter/Sydney and Peter-Prefix.pch";
-				INFOPLIST_FILE = "Sydney and PeterTests/Sydney and PeterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Sydney and PeterTests/Beautify GNVTests-Info.plist";
+				PRODUCT_NAME = "Beautify GNVTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -583,7 +583,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D00E8C4918B9183900A29A70 /* Build configuration list for PBXProject "Sydney and Peter" */ = {
+		D00E8C4918B9183900A29A70 /* Build configuration list for PBXProject "Beautify GNV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D00E8C7E18B9183A00A29A70 /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D00E8C8018B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Sydney and Peter" */ = {
+		D00E8C8018B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Beautify GNV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D00E8C8118B9183A00A29A70 /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D00E8C8318B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Sydney and PeterTests" */ = {
+		D00E8C8318B9183A00A29A70 /* Build configuration list for PBXNativeTarget "Beautify GNVTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D00E8C8418B9183A00A29A70 /* Debug */,
